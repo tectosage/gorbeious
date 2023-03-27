@@ -1,0 +1,253 @@
+@import url('https://gorbeious.cash/a/fontdisplay.css');
+
+
+:root {
+	font-family: 'font','Helvetica Neue','Times New Roman', Inter, Avenir, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 600;
+  
+	color-scheme: light;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+  
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+  }
+  
+  a {
+	font-weight: 600;
+	color: #646cff;
+	text-decoration: inherit;
+  }
+  a:hover {
+	color: #535bf2;
+  }
+  
+  body {
+	margin: 0;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+  }
+  
+  h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+  }
+  
+  .card {
+	padding: 2em;
+  }
+  
+  main {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+	padding-top: 100px;
+  }
+  
+  button {
+	border-radius: 8px;
+	/*border: 1px solid transparent;*/
+	border: none;
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 600;
+	font-family: inherit;
+	background-color: #1a1a1a;
+	cursor: pointer;
+	transition: border-color 0.25s;
+  }
+  button:hover {
+	/*border-color: #646cff;*/
+	border: none;
+  }
+  button:focus,
+  button:focus-visible {
+	/*outline: 4px auto -webkit-focus-ring-color;*/
+  }
+  
+@media (prefers-color-scheme: light)
+{
+	:root {
+	color: #25282D;
+	background-color: #FFFEFC;
+	}
+	a:hover {
+	color: #747bff;
+	}
+	button {
+		background-color: #f9f9f9;
+	}
+
+}
+
+@media (prefers-color-scheme: dark)
+{
+	:root {
+		color: #25282D;
+		background-color: #FFFEFC;
+		}
+		a:hover {
+		color: #747bff;
+		}
+		button {
+			background-color: #f9f9f9;
+		}
+
+}
+
+@media (orientation: portrait)
+{
+	main{
+		margin: 0 auto;
+		padding: 1rem;
+		text-align: center;
+		padding-top: 100px;
+	}
+
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    border:none;
+}
+
+button.default{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	align-items: center;
+	padding: 5px 12px;
+	gap: 5px;
+
+
+	background: #25282D;
+	box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+	border-radius: 40px;
+
+	color: #FFFFFF;
+}
+
+input:focus{
+	outline: none;
+}
+
+input{
+	font-weight: 600;
+	font-family: 'Helvetica Neue'
+}
+
+.upgradedBack:hover{
+	color:#FFFEFC;
+	background-color: #0E76FD;
+}
+
+.transaction, button.token, div#main > * {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: .3s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: .1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+.svg-loader{
+	display:flex;
+	/*position: relative*/
+	align-content: center;
+	justify-content: center;
+	height: 40px;
+	width: 40px;
+	margin: 10px 0 0 0;
+  }
+  .loader-svg{
+	/*position: absolute;
+	left: 0; right: 0; top: 0; bottom: 0;*/
+	height: 40px;
+	width: 40px;
+	fill: none;
+	stroke-width: 10px;
+	stroke-linecap: round;
+	stroke: #0E76FD;
+  }
+  .loader-svg.bg{
+	stroke-width: 14px;
+	stroke: #FFFEFC;
+  }
+
+  .animate{
+	stroke-dasharray: 242.6;
+	animation: fill-animation 1s cubic-bezier(1,1,1,1) 0s infinite reverse;
+  }
+  
+  @keyframes fill-animation{
+	0%{
+	  stroke-dasharray: 40 242.6;
+	  stroke-dashoffset: 0;
+	}
+	50%{
+	  stroke-dasharray: 141.3;
+	  stroke-dashoffset: 141.3;
+	}
+	100%{
+	  stroke-dasharray: 40 242.6;
+	  stroke-dashoffset: 282.6;
+	}
+  }
+
+  #loadingContainer{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+
+  div.learnMore{
+	position: fixed;
+	bottom: 20px;
+	left: 0px;
+	right: 0px;
+	display: inline-flex;
+	justify-content: center;
+	width: 100%
+
+}
+button.learnMore{
+	color: #0E76FD;
+	background-color: white;
+}
+.learnMore:hover{
+	border-color: white;
+}
+.learnMore:active{
+	outline-color: white;
+	border-color: white;
+}
+
+#info{
+	text-align: left;
+	padding: 10px;
+}
